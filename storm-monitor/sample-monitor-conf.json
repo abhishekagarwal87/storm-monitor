@@ -1,0 +1,30 @@
+{
+  "port": 8080,
+  "threads": 4,
+  "clusters": [
+    {
+      "name": "dc-1",
+      "nimbus.host": "nimbus.dc-1.com",
+      "topologies": [
+        "topology-1",
+        "topology-2"
+      ],
+      "nimbus.thrift.port": 6627
+    },
+    {
+      "name": "dc-2",
+      "nimbus.host": "nimbus.dc-2.com",
+      "topologies": [
+        "topology-1",
+        "topology-2"
+      ],
+      "nimbus.thrift.port": 6627
+    }
+  ],
+  "email": {
+    "from": "no-reply@example.com",
+    "to": "abhishek.agarwal@inmobi.com",
+    "host.name": "smtp.example.com"
+  },
+  "state.update.interval.seconds": 600
+}
