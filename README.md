@@ -2,8 +2,7 @@
 Tool for monitoring topologies in storm
 
 # How to build
-cd storm-monitor
-mvn clean install -DskipTests
+cd storm-monitor && mvn clean install -DskipTests
 
 # Configuration
 check sample configuration at storm-monitor/sample-monitor-conf.json. You can configure multiple
